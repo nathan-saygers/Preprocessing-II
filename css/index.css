@@ -168,6 +168,10 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+.page-break {
+  max-width: 1100px;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .nav-bar {
   display: flex;
   justify-content: space-between;
@@ -175,7 +179,6 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  border-bottom: 2px dashed #C0C0C0;
   padding: 30px 0;
 }
 @media (max-width: 500px) {
