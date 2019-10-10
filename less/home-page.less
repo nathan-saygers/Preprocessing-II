@@ -1,4 +1,9 @@
 .home {
+  @media @mobile {
+    .display-flex(space-between, center);
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
 
   .headline {
     border-bottom: 2px dashed @navigation-border;
@@ -16,17 +21,36 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media @mobile {
+      flex-direction: column;
+      margin: 15px 0;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 98%;
+        margin: 0 1%;
+      }
     }
+    
 
     .img-content {
       width: 48%;
       padding-left: 1%;
-
       img {
         border-radius: 10px;
+        @media @mobile {
+          flex-grow: 2;
+        }
+      }
+      @media @mobile {
+        width: 98%;
+        margin: 1%;
+        padding: 0;
+        .display-flex(center, center);
+        
       }
     }
   }
@@ -34,6 +58,9 @@
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile {
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
