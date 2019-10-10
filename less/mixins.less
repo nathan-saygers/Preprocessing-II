@@ -5,3 +5,15 @@
   justify-content: @justify;
   align-items: @align;
 }
+
+.custom-button(@width, @bg-color, @text-color){
+  width: @width;
+  background-color: @bg-color;
+  color: @text-color;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@mobile: ~"(max-width: 500px)";

@@ -7,7 +7,18 @@
   margin: 0 auto;
   border-bottom: 2px dashed @navigation-border;
   padding: 30px 0;
-    
+  
+  @media @mobile {
+    .display-flex(space-between, center);
+    flex-direction: column;
+  }
+
+  @media @mobile {
+    h1 {
+      margin: 5%;
+    }
+  }
+
     nav {
       .display-flex(space-evenly, center);
       width: 48%;
