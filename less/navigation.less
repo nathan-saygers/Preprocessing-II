@@ -11,17 +11,21 @@
   @media @mobile {
     .display-flex(space-between, center);
     flex-direction: column;
+    }
   }
 
   @media @mobile {
     h1 {
-      margin: 5%;
+      margin: 3%;
     }
   }
 
     nav {
       .display-flex(space-evenly, center);
       width: 48%;
+      @media @mobile {
+        width: 100%;
+        justify-content: space-around;
     }
 
       a {
@@ -29,7 +33,4 @@
         color: black;
         font-size: 1.8rem;
       }
-
-
-
 }
