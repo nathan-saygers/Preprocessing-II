@@ -169,7 +169,7 @@ img {
   margin: 0 auto;
 }
 .page-break {
-  max-width: 1100px;
+  max-width: 1400px;
   border-bottom: 2px dashed #C0C0C0;
 }
 .nav-bar {
@@ -233,6 +233,12 @@ nav a {
 }
 .home .headline {
   border-bottom: 2px dashed #C0C0C0;
+  margin: 0 1%;
+}
+@media (max-width: 500px) {
+  .home .headline {
+    margin: 0 1%;
+  }
 }
 .home .headline-text {
   margin-top: 30px;
@@ -300,17 +306,20 @@ nav a {
   padding-left: 0;
 }
 .home .content-destination {
-  width: 75%;
+  width: 90%;
   margin: 30px;
 }
 @media (max-width: 500px) {
   .home .content-destination {
-    width: 98%;
+    width: 90%;
     margin: 30px 0;
   }
 }
 .home .content-destination img {
   border-radius: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .home .content-pick {
   padding-top: 30px;
