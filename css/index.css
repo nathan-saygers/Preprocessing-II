@@ -294,6 +294,12 @@ img {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 98%;
+    margin: 0 1%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -303,16 +309,39 @@ img {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 85%;
+    margin: 3% 1%;
+  }
 }
 .home .content-pick .btn {
   width: 80%;
   background-color: #008080;
   color: #FFFFFF;
   text-align: center;
-  font-size: 2rem;
-  padding: 10px;
+  font-size: 1.8rem;
+  padding: 13px;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .btn {
+    width: 90%;
+    background-color: #17A2B8;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 13px;
+    border-radius: 10px;
+  }
 }
