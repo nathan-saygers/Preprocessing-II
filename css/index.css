@@ -233,11 +233,11 @@ nav a {
 }
 .home .headline {
   border-bottom: 2px dashed #C0C0C0;
-  margin: 0 1%;
+  margin: 0 3%;
 }
 @media (max-width: 500px) {
   .home .headline {
-    margin: 0 1%;
+    margin: 0 3%;
   }
 }
 .home .headline-text {
@@ -245,15 +245,15 @@ nav a {
   margin-bottom: 15px;
 }
 .home .content-section {
-  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 30px 20px;
 }
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
-    margin-top: 30px;
+    margin: 30px 0;
   }
 }
 .home .content-section .text-content {
@@ -263,7 +263,7 @@ nav a {
 @media (max-width: 500px) {
   .home .content-section .text-content {
     width: 98%;
-    margin: 0 1%;
+    margin: 0 3%;
   }
 }
 .home .content-section .img-content {
@@ -281,7 +281,7 @@ nav a {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     width: 98%;
-    margin: 1%;
+    margin: 1% 3%;
     padding: 0;
     display: flex;
     justify-content: center;
