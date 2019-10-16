@@ -1,1 +1,38 @@
 // Navigation Styles here
+.page-break {
+  max-width: 1400px;
+  border-bottom: 2px dashed @navigation-border;
+  }
+  .nav-bar {
+    .display-flex(space-between, center);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0;
+    
+    @media @mobile {
+      .display-flex(space-between, center);
+      flex-direction: column;
+      }
+    }
+
+    @media @mobile {
+      h1 {
+        margin: 3%;
+      }
+    }
+
+      nav {
+        .display-flex(space-evenly, center);
+        width: 48%;
+        @media @mobile {
+          width: 100%;
+          justify-content: space-around;
+      }
+
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 1.8rem;
+        }
+  }

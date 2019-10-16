@@ -1,1 +1,19 @@
 // Mixins in here
+
+.display-flex(@justify, @align){
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.custom-button(@width, @bg-color, @text-color){
+  width: @width;
+  background-color: @bg-color;
+  color: @text-color;
+  text-align: center;
+  font-size: 1.8rem;
+  padding: 13px;
+  border-radius: 10px;
+}
+
+@mobile: ~"(max-width: 500px)";
